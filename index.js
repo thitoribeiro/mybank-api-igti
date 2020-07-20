@@ -1,10 +1,13 @@
 const express = require("express");
 const app = express();
 
-app.get ("/", (req, res) => {
-  res.send("API funcionando");
+
+app.post("/account", (req, res) => {
+  console.log('post account');
 });
 
+
+
 app.listen(3000, () => {
-    console.log("API started");
+  console.log("API started");
 });
